@@ -3,7 +3,6 @@ import React, { useState } from "react";
 const InputShortness = ({ setInputValue }) => {
   const [value, setValue] = useState("");
   const handleClickShorten = (e) => {
-    console.log("123456", value);
     e.preventDefault();
     setInputValue(value);
     setValue("");

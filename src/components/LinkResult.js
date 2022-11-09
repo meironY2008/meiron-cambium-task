@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { getShortUrl } from "../Actions/ShortAction";
 
 const LinkResult = ({ inputValue }) => {
-  //   const [shoretenLink, setShortenLink] = useState("");
   const [copied, setCopied] = useState(false);
   const dispatch = useDispatch();
   const { shortUrl, loading, error } = useSelector(
